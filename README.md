@@ -15,6 +15,10 @@ To install this package:
 pkg> add https://github.com/sorairolake/Sysexits.jl
 ```
 
+### Documentation
+
+See the [documentation][docs-url] for more details.
+
 ## Changelog
 
 Please see [CHANGELOG.adoc](CHANGELOG.adoc).
@@ -37,3 +41,4 @@ See [COPYRIGHT](COPYRIGHT), [LICENSE-APACHE](LICENSE-APACHE) and
 [ci-url]: https://github.com/sorairolake/Sysexits.jl/actions?query=branch%3Adevelop+workflow%3ACI++
 [sysexits-man-url]: https://man.openbsd.org/sysexits
 [sysexits-rs-crate-url]: https://crates.io/crates/sysexits
+[docs-url]: https://sorairolake.github.io/Sysexits.jl/stable/

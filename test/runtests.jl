@@ -4,8 +4,15 @@
 # Copyright (C) 2023 Shun Sakai
 #
 
+using Documenter
 using Sysexits
 using Test
+
+DocMeta.setdocmeta!(Sysexits, :DocTestSetup, :(using Sysexits); recursive = true)
+
+@testset "Doctests" begin
+    doctest(Sysexits; manual = false)
+end
 
 @testset "ExitCode to integer" begin
     @test UInt8(Sysexits.ok) == 0
