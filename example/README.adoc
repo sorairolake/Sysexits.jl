@@ -1,0 +1,4 @@
+= Examples
+
+link:isascii.jl[]::
+  An example that returns `Sysexits.ExitCode`.
