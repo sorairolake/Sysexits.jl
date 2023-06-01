@@ -6,7 +6,7 @@
 
 # Run tests
 test:
-    #!/usr/bin/env julia
+    #!/usr/bin/env -S julia --project
     import Pkg
     Pkg.test()
 

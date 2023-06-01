@@ -6,6 +6,6 @@
 
 module Sysexits
 
-greet() = print("Hello World!")
+include("exitcode.jl")
 
 end # module Sysexits
