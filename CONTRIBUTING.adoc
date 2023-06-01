@@ -30,9 +30,3 @@ just test
 ----
 just fmt
 ----
-
-.Run the linter
-[source, shell]
-----
-just lint
-----
