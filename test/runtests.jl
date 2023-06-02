@@ -4,9 +4,7 @@
 # Copyright (C) 2023 Shun Sakai
 #
 
-using Documenter
-using Sysexits
-using Test
+using Documenter, Sysexits, Test
 
 DocMeta.setdocmeta!(Sysexits, :DocTestSetup, :(using Sysexits); recursive = true)
 
@@ -34,45 +32,45 @@ end
 end
 
 @testset "issuccess for successful termination" begin
-    @test Sysexits.issuccess(Sysexits.ok)
+    @test issuccess(Sysexits.ok)
 end
 
 @testset "issuccess for unsuccessful termination" begin
-    @test !Sysexits.issuccess(Sysexits.usage)
-    @test !Sysexits.issuccess(Sysexits.dataerr)
-    @test !Sysexits.issuccess(Sysexits.noinput)
-    @test !Sysexits.issuccess(Sysexits.nouser)
-    @test !Sysexits.issuccess(Sysexits.nohost)
-    @test !Sysexits.issuccess(Sysexits.unavailable)
-    @test !Sysexits.issuccess(Sysexits.software)
-    @test !Sysexits.issuccess(Sysexits.oserr)
-    @test !Sysexits.issuccess(Sysexits.osfile)
-    @test !Sysexits.issuccess(Sysexits.cantcreat)
-    @test !Sysexits.issuccess(Sysexits.ioerr)
-    @test !Sysexits.issuccess(Sysexits.tempfail)
-    @test !Sysexits.issuccess(Sysexits.protocol)
-    @test !Sysexits.issuccess(Sysexits.noperm)
-    @test !Sysexits.issuccess(Sysexits.config)
+    @test !issuccess(Sysexits.usage)
+    @test !issuccess(Sysexits.dataerr)
+    @test !issuccess(Sysexits.noinput)
+    @test !issuccess(Sysexits.nouser)
+    @test !issuccess(Sysexits.nohost)
+    @test !issuccess(Sysexits.unavailable)
+    @test !issuccess(Sysexits.software)
+    @test !issuccess(Sysexits.oserr)
+    @test !issuccess(Sysexits.osfile)
+    @test !issuccess(Sysexits.cantcreat)
+    @test !issuccess(Sysexits.ioerr)
+    @test !issuccess(Sysexits.tempfail)
+    @test !issuccess(Sysexits.protocol)
+    @test !issuccess(Sysexits.noperm)
+    @test !issuccess(Sysexits.config)
 end
 
 @testset "isfailure for successful termination" begin
-    @test !Sysexits.isfailure(Sysexits.ok)
+    @test !isfailure(Sysexits.ok)
 end
 
 @testset "isfailure for unsuccessful termination" begin
-    @test Sysexits.isfailure(Sysexits.usage)
-    @test Sysexits.isfailure(Sysexits.dataerr)
-    @test Sysexits.isfailure(Sysexits.noinput)
-    @test Sysexits.isfailure(Sysexits.nouser)
-    @test Sysexits.isfailure(Sysexits.nohost)
-    @test Sysexits.isfailure(Sysexits.unavailable)
-    @test Sysexits.isfailure(Sysexits.software)
-    @test Sysexits.isfailure(Sysexits.oserr)
-    @test Sysexits.isfailure(Sysexits.osfile)
-    @test Sysexits.isfailure(Sysexits.cantcreat)
-    @test Sysexits.isfailure(Sysexits.ioerr)
-    @test Sysexits.isfailure(Sysexits.tempfail)
-    @test Sysexits.isfailure(Sysexits.protocol)
-    @test Sysexits.isfailure(Sysexits.noperm)
-    @test Sysexits.isfailure(Sysexits.config)
+    @test isfailure(Sysexits.usage)
+    @test isfailure(Sysexits.dataerr)
+    @test isfailure(Sysexits.noinput)
+    @test isfailure(Sysexits.nouser)
+    @test isfailure(Sysexits.nohost)
+    @test isfailure(Sysexits.unavailable)
+    @test isfailure(Sysexits.software)
+    @test isfailure(Sysexits.oserr)
+    @test isfailure(Sysexits.osfile)
+    @test isfailure(Sysexits.cantcreat)
+    @test isfailure(Sysexits.ioerr)
+    @test isfailure(Sysexits.tempfail)
+    @test isfailure(Sysexits.protocol)
+    @test isfailure(Sysexits.noperm)
+    @test isfailure(Sysexits.config)
 end

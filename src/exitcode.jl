@@ -94,8 +94,8 @@ Something was found in an unconfigured or misconfigured state.
 # Examples
 
 ```jldoctest
-julia> Sysexits.ExitCode
-Enum Sysexits.ExitCode:
+julia> ExitCode
+Enum ExitCode:
 ok = 0x00
 usage = 0x40
 dataerr = 0x41
@@ -142,10 +142,10 @@ Return `true` if this system exit code represents successful termination,
 # Examples
 
 ```jldoctest
-julia> Sysexits.issuccess(Sysexits.ok)
+julia> issuccess(Sysexits.ok)
 true
 
-julia> Sysexits.issuccess(Sysexits.usage)
+julia> issuccess(Sysexits.usage)
 false
 ```
 """
@@ -160,10 +160,10 @@ Return `true` if this system exit code represents unsuccessful termination,
 # Examples
 
 ```jldoctest
-julia> Sysexits.isfailure(Sysexits.ok)
+julia> isfailure(Sysexits.ok)
 false
 
-julia> Sysexits.isfailure(Sysexits.usage)
+julia> isfailure(Sysexits.usage)
 true
 ```
 """
@@ -175,3 +175,5 @@ isfailure(code::ExitCode)::Bool = !issuccess(code)
 Stop the program with the exit code defined by `ExitCode`.
 """
 exit(code::ExitCode) = Base.exit(code)
+
+export ExitCode, issuccess, isfailure

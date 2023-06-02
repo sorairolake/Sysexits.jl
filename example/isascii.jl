@@ -4,7 +4,7 @@
 # Copyright (C) 2023 Shun Sakai
 #
 
-using Sysexits
+import Sysexits
 
 input = isempty(ARGS) ? readchomp(stdin) : ARGS[1]
 try

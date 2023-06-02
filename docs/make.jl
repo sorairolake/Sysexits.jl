@@ -4,8 +4,7 @@
 # Copyright (C) 2023 Shun Sakai
 #
 
-using Documenter
-using Sysexits
+using Documenter, Sysexits
 
 DocMeta.setdocmeta!(Sysexits, :DocTestSetup, :(using Sysexits); recursive = true)
 
