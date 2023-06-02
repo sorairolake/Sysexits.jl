@@ -1,0 +1,12 @@
+name = "Sysexits"
+uuid = "49ffb959-a01e-48ce-b0f8-35f9b0bd11b7"
+authors = ["Shun Sakai <sorairolake@protonmail.ch>"]
+version = "0.1.0"
+
+[extras]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Documenter", "Markdown", "Test"]
