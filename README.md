@@ -24,7 +24,7 @@ str = "abcdefgh"
 try
     astr = ascii(str)
     println(astr)
-    Sysexits.exit(Sysexits.ok)
+    Sysexits.exit()
 catch err
     showerror(stderr, err)
     println(stderr)

@@ -170,10 +170,10 @@ true
 isfailure(code::ExitCode)::Bool = !issuccess(code)
 
 """
-    exit(code::ExitCode)
+    exit(code::ExitCode = ok)
 
 Stop the program with the exit code defined by `ExitCode`.
 """
-exit(code::ExitCode) = Base.exit(code)
+exit(code::ExitCode = ok) = Base.exit(code)
 
 export ExitCode, issuccess, isfailure
