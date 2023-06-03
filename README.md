@@ -1,6 +1,8 @@
 # Sysexits.jl
 
 [![CI][ci-badge]][ci-url]
+[![Stable Docs][stable-docs-badge]][stable-docs-url]
+[![Dev Docs][dev-docs-badge]][dev-docs-url]
 
 **Sysexits.jl** is a library that provides the system exit code constants as
 defined by [`<sysexits.h>`][sysexits-man-url].
@@ -34,7 +36,7 @@ end
 
 ### Documentation
 
-See the [documentation][docs-url] for more details.
+See the [documentation][stable-docs-url] for more details.
 
 ## Changelog
 
@@ -56,6 +58,9 @@ See [COPYRIGHT](COPYRIGHT), [LICENSE-APACHE](LICENSE-APACHE) and
 
 [ci-badge]: https://img.shields.io/github/actions/workflow/status/sorairolake/Sysexits.jl/CI.yaml?branch=develop&label=CI&logo=github&style=for-the-badge
 [ci-url]: https://github.com/sorairolake/Sysexits.jl/actions?query=branch%3Adevelop+workflow%3ACI++
+[stable-docs-badge]: https://img.shields.io/badge/docs-stable-blue?style=for-the-badge
+[stable-docs-url]: https://sorairolake.github.io/Sysexits.jl/stable/
+[dev-docs-badge]: https://img.shields.io/badge/docs-dev-blue?style=for-the-badge
+[dev-docs-url]: https://sorairolake.github.io/Sysexits.jl/dev/
 [sysexits-man-url]: https://man.openbsd.org/sysexits
 [sysexits-rs-crate-url]: https://crates.io/crates/sysexits
-[docs-url]: https://sorairolake.github.io/Sysexits.jl/stable/
