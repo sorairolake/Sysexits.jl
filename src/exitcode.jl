@@ -172,7 +172,7 @@ isfailure(code::ExitCode)::Bool = !issuccess(code)
 """
     exit(code::ExitCode = ok)
 
-Stop the program with the exit code defined by `ExitCode`.
+Stop the program with the exit code defined by [`ExitCode`](@ref).
 """
 exit(code::ExitCode = ok) = Base.exit(code)
 
