@@ -26,7 +26,12 @@ fmt:
 
 # Build the documentation
 @build-docs:
-    julia docs/make.jl
+    julia --project=docs -e ' \
+        using Pkg; \
+        Pkg.develop(PackageSpec(path = pwd())); \
+        Pkg.instantiate() \
+    '
+    julia --project=docs docs/make.jl
 
 # Run the formatter for the documentation
 @fmt-docs:
