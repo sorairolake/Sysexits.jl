@@ -10,7 +10,7 @@ input = isempty(ARGS) ? readchomp(stdin) : ARGS[1]
 try
     ascii(input)
     println("OK")
-    Sysexits.exit(Sysexits.ok)
+    Sysexits.exit()
 catch err
     showerror(stderr, err)
     println(stderr)

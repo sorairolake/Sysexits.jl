@@ -19,7 +19,7 @@ jobs:
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.9.2
       with:
-        version: '1.0'
+        version: '1.9'
     - name: Cache Julia artifacts
       uses: julia-actions/cache@v1.2.2
       with:

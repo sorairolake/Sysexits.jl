@@ -16,24 +16,20 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        target:
-          - x86_64-unknown-linux-gnu
-          - x86_64-apple-darwin
-          - x86_64-pc-windows-msvc
-        include:
-          - target: x86_64-unknown-linux-gnu
-            os: ubuntu-22.04
-          - target: x86_64-apple-darwin
-            os: macos-12
-          - target: x86_64-pc-windows-msvc
-            os: windows-2022
+        os:
+          - ubuntu-22.04
+          - macos-12
+          - windows-2022
+        version:
+          - '1.0' # minimum supported Julia version
+          - '1.9'
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.9.2
       with:
-        version: '1.0'
+        version: ${{ matrix.version }}
     - name: Cache Julia artifacts
       uses: julia-actions/cache@v1.2.2
       with:
@@ -52,7 +48,7 @@ jobs:
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.9.2
       with:
-        version: '1.0'
+        version: '1.9'
     - name: Cache Julia artifacts
       uses: julia-actions/cache@v1.2.2
       with:

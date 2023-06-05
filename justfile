@@ -24,6 +24,19 @@ fmt:
 @fmt-readme:
     npx prettier -w README.md
 
+# Build the documentation
+@build-docs:
+    julia --project=docs -e ' \
+        using Pkg; \
+        Pkg.develop(PackageSpec(path = pwd())); \
+        Pkg.instantiate() \
+    '
+    julia --project=docs docs/make.jl
+
+# Run the formatter for the documentation
+@fmt-docs:
+    npx prettier -w docs/src
+
 # Increment the version
 @bump part:
     bump2version {{part}}
