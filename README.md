@@ -14,7 +14,7 @@ This library is a port of [sysexits-rs][sysexits-rs-crate-url].
 To install this package:
 
 ```julia
-pkg> add https://github.com/sorairolake/Sysexits.jl
+pkg> add Sysexits
 ```
 
 ### Example

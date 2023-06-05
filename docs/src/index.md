@@ -10,7 +10,7 @@ To install this package, use the following command inside the
 [Pkg](https://pkgdocs.julialang.org/) REPL:
 
 ```julia
-pkg> add https://github.com/sorairolake/Sysexits.jl
+pkg> add Sysexits
 ```
 
 After the package is installed, it can be loaded with:
