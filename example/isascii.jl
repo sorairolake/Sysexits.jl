@@ -6,7 +6,7 @@
 
 import Sysexits
 
-input = isempty(ARGS) ? readchomp(stdin) : ARGS[1]
+input = isempty(ARGS) ? readchomp(stdin) : read(ARGS[1], String)
 try
     ascii(input)
     println("OK")
