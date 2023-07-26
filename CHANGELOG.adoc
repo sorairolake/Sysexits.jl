@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Shun Sakai
+//
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 = Changelog
 :toc: macro
 :project-url: https://github.com/sorairolake/Sysexits.jl
@@ -18,6 +22,7 @@ toc::[]
 
 * Change the comment header to the format recommended by the REUSE
   Specification ({pull-request-url}/6[#6])
+* Make this project REUSE compliant ({pull-request-url}/7[#7])
 
 == {compare-url}/v0.2.0\...v0.2.1[0.2.1] - 2023-06-09
 

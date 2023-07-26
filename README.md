@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 Shun Sakai
+
+SPDX-License-Identifier: Apache-2.0 OR MIT
+-->
+
 # Sysexits.jl
 
 [![CI][ci-badge]][ci-url]
@@ -53,8 +59,7 @@ Copyright &copy; 2023 Shun Sakai (see [AUTHORS.adoc](AUTHORS.adoc))
 This library is distributed under the terms of either the _Apache License 2.0_
 or the _MIT License_.
 
-See [COPYRIGHT](COPYRIGHT), [LICENSE-APACHE](LICENSE-APACHE) and
-[LICENSE-MIT](LICENSE-MIT) for more details.
+See [COPYING](COPYING) for more details.
 
 [ci-badge]: https://img.shields.io/github/actions/workflow/status/sorairolake/Sysexits.jl/CI.yaml?branch=develop&label=CI&logo=github&style=for-the-badge
 [ci-url]: https://github.com/sorairolake/Sysexits.jl/actions?query=branch%3Adevelop+workflow%3ACI++
