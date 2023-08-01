@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2023 Shun Sakai
-
-SPDX-License-Identifier: Apache-2.0 OR MIT
--->
-
 # Sysexits.jl
 
 [Sysexits.jl](https://github.com/sorairolake/Sysexits.jl) provides the system
