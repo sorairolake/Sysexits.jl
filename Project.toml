@@ -1,7 +1,11 @@
+# SPDX-FileCopyrightText: 2023 Shun Sakai
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 name = "Sysexits"
 uuid = "49ffb959-a01e-48ce-b0f8-35f9b0bd11b7"
 authors = ["Shun Sakai <sorairolake@protonmail.ch>"]
-version = "0.2.1"
+version = "0.2.2"
 
 [compat]
 julia = "1.0"
