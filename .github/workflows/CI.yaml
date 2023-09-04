@@ -28,7 +28,7 @@ jobs:
           - '1.9'
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.9.2
       with:
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.9.2
       with:
