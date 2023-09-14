@@ -33,10 +33,6 @@ jobs:
         uses: julia-actions/setup-julia@v1.9.2
         with:
           version: ${{ matrix.version }}
-      - name: Cache Julia artifacts
-        uses: julia-actions/cache@v1.2.2
-        with:
-          cache-registries: "true"
       - name: Build a package
         uses: julia-actions/julia-buildpkg@v1.4.2
       - name: Run tests
@@ -52,10 +48,6 @@ jobs:
         uses: julia-actions/setup-julia@v1.9.2
         with:
           version: "1.9"
-      - name: Cache Julia artifacts
-        uses: julia-actions/cache@v1.2.2
-        with:
-          cache-registries: "true"
       - name: Check code formatted
         run: |
           julia -e 'using Pkg; Pkg.add("JuliaFormatter")'
