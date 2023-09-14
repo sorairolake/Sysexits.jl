@@ -7,15 +7,16 @@ name: Deployment
 on:
   push:
     branches:
-      - develop
+      - "develop"
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     name: Deploy
-    permissions:
-      contents: write
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
