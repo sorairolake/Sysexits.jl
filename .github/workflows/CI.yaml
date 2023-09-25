@@ -34,7 +34,7 @@ jobs:
         with:
           version: ${{ matrix.version }}
       - name: Build a package
-        uses: julia-actions/julia-buildpkg@v1.4.2
+        uses: julia-actions/julia-buildpkg@v1.4.3
       - name: Run tests
         uses: julia-actions/julia-runtest@v1.9.3
 
