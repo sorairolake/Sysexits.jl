@@ -25,7 +25,7 @@ jobs:
           - windows-2022
         version:
           - "1.0" # minimum supported Julia version
-          - "1.9"
+          - "1" # automatically expands to the latest stable release of Julia
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -47,7 +47,7 @@ jobs:
       - name: Setup Julia environment
         uses: julia-actions/setup-julia@v1.9.2
         with:
-          version: "1.9"
+          version: "1" # automatically expands to the latest stable release of Julia
       - name: Check code formatted
         run: |
           julia -e 'using Pkg; Pkg.add("JuliaFormatter")'
