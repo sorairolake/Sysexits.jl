@@ -7,4 +7,4 @@ Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Sysexits = "49ffb959-a01e-48ce-b0f8-35f9b0bd11b7"
 
 [compat]
-Documenter = "1.1"
+Documenter = "1.2"
