@@ -30,7 +30,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v1.9.4
+        uses: julia-actions/setup-julia@v1.9.5
         with:
           version: ${{ matrix.version }}
       - name: Build a package
@@ -45,7 +45,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v1.9.4
+        uses: julia-actions/setup-julia@v1.9.5
         with:
           version: "1" # automatically expands to the latest stable release of Julia
       - name: Check code formatted
