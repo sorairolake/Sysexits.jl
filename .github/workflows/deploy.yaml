@@ -27,7 +27,7 @@ jobs:
         with:
           version: "1" # automatically expands to the latest stable release of Julia
       - name: Build a package
-        uses: julia-actions/julia-buildpkg@v1.5.0
+        uses: julia-actions/julia-buildpkg@v1.6.0
       - name: Deploy
         uses: julia-actions/julia-docdeploy@v1.3.1
         if: github.ref == 'refs/heads/develop' || startsWith(github.ref, 'refs/tags/')
