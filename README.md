@@ -20,7 +20,7 @@ This library is a port of [sysexits-rs].
 
 To install this package:
 
-```jl
+```
 pkg> add Sysexits
 ```
 

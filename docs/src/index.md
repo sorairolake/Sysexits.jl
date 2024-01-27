@@ -9,13 +9,13 @@ exit code constants as defined by
 To install this package, use the following command inside the
 [Pkg](https://pkgdocs.julialang.org/) REPL:
 
-```jl
+```
 pkg> add Sysexits
 ```
 
 After the package is installed, it can be loaded with:
 
-```jl
+```julia
 using Sysexits
 ```
 
@@ -26,7 +26,7 @@ The following example stops the program with the exit code defined by
 range then the program stops with exit code `0` (`Sysexits.ok`), otherwise it
 stops with exit code `65` (`Sysexits.dataerr`).
 
-```jl
+```julia
 import Sysexits
 
 str = "abcdefgh"
