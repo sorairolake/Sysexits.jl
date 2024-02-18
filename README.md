@@ -64,9 +64,9 @@ This project is compliant with version 3.0 of the [_REUSE Specification_]. See
 copyright notices of individual files for more details on copyright and
 licensing information.
 
-[ci-badge]: https://img.shields.io/github/actions/workflow/status/sorairolake/Sysexits.jl/CI.yaml?branch=develop&label=CI&logo=github&style=for-the-badge
+[ci-badge]: https://img.shields.io/github/actions/workflow/status/sorairolake/Sysexits.jl/CI.yaml?branch=develop&style=for-the-badge&logo=github&label=CI
 [ci-url]: https://github.com/sorairolake/Sysexits.jl/actions?query=branch%3Adevelop+workflow%3ACI++
-[juliahub-badge]: https://img.shields.io/badge/JuliaHub-Sysexits-mediumorchid?logo=julia&style=for-the-badge
+[juliahub-badge]: https://img.shields.io/badge/JuliaHub-Sysexits-mediumorchid?style=for-the-badge&logo=julia
 [juliahub-url]: https://juliahub.com/ui/Packages/General/Sysexits
 [stable-docs-badge]: https://img.shields.io/badge/docs-stable-blue?style=for-the-badge
 [stable-docs-url]: https://sorairolake.github.io/Sysexits.jl/stable/
