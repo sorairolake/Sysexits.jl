@@ -26,7 +26,7 @@ pkg> add Sysexits
 
 ### Example
 
-```jl
+```julia
 import Sysexits
 
 str = "abcdefgh"
