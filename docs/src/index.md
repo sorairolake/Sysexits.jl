@@ -9,7 +9,7 @@ exit code constants as defined by
 To install this package, use the following command inside the
 [Pkg](https://pkgdocs.julialang.org/) REPL:
 
-```julia
+```
 pkg> add Sysexits
 ```
 
