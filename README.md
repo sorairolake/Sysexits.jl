@@ -45,6 +45,16 @@ end
 
 See the [documentation][stable-docs-url] for more details.
 
+## Source code
+
+The upstream repository is available at
+<https://github.com/sorairolake/Sysexits.jl.git>.
+
+The source code is also available at:
+
+- <https://gitlab.com/sorairolake/Sysexits.jl.git>
+- <https://codeberg.org/sorairolake/Sysexits.jl.git>
+
 ## Changelog
 
 Please see [CHANGELOG.adoc].
