@@ -29,6 +29,14 @@ end
     @test UInt8(Sysexits.config) == 78
 end
 
+@testset "base value" begin
+    @test Sysexits.base == Sysexits.usage
+end
+
+@testset "maximum value" begin
+    @test Sysexits.max == Sysexits.config
+end
+
 @testset "issuccess for successful termination" begin
     @test issuccess(Sysexits.ok)
 end

@@ -132,6 +132,34 @@ config = 0x4e
 end
 
 """
+    base
+
+The base value for `ExitCode`.
+
+# Examples
+
+```jldoctest
+julia> Sysexits.base == Sysexits.usage
+true
+```
+"""
+const base = usage
+
+"""
+    max
+
+The maximum value for `ExitCode`.
+
+# Examples
+
+```jldoctest
+julia> Sysexits.max == Sysexits.config
+true
+```
+"""
+const max = config
+
+"""
     issuccess(code::ExitCode) -> Bool
 
 Return `true` if this system exit code represents successful termination,
