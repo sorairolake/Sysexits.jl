@@ -20,7 +20,7 @@ This library is a port of [sysexits-rs].
 
 To install this package:
 
-```
+```julia-repl
 pkg> add Sysexits
 ```
 
@@ -45,6 +45,16 @@ end
 
 See the [documentation][stable-docs-url] for more details.
 
+## Source code
+
+The upstream repository is available at
+<https://github.com/sorairolake/Sysexits.jl.git>.
+
+The source code is also available at:
+
+- <https://gitlab.com/sorairolake/Sysexits.jl.git>
+- <https://codeberg.org/sorairolake/Sysexits.jl.git>
+
 ## Changelog
 
 Please see [CHANGELOG.adoc].
@@ -60,7 +70,7 @@ Copyright &copy; 2023&ndash;2024 Shun Sakai (see [AUTHORS.adoc])
 This library is distributed under the terms of either the _Apache License 2.0_
 or the _MIT License_.
 
-This project is compliant with version 3.0 of the [_REUSE Specification_]. See
+This project is compliant with version 3.2 of the [_REUSE Specification_]. See
 copyright notices of individual files for more details on copyright and
 licensing information.
 

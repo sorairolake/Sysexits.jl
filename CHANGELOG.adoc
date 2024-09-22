@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 The format is based on https://keepachangelog.com/[Keep a Changelog], and this
 project adheres to https://semver.org/[Semantic Versioning].
 
+== {compare-url}/v0.2.8\...v0.2.9[0.2.9] - 2024-09-22
+
+=== Added
+
+* Add `base` and `max` constants ({pull-request-url}/51[#51])
+
 == {compare-url}/v0.2.7\...v0.2.8[0.2.8] - 2024-04-08
 
 === Changed
