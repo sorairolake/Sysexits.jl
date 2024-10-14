@@ -24,23 +24,6 @@ To install this package:
 pkg> add Sysexits
 ```
 
-### Example
-
-```julia
-import Sysexits
-
-str = "abcdefgh"
-try
-    astr = ascii(str)
-    println(astr)
-    Sysexits.exit()
-catch err
-    showerror(stderr, err)
-    println(stderr)
-    Sysexits.exit(Sysexits.dataerr)
-end
-```
-
 ### Documentation
 
 See the [documentation][stable-docs-url] for more details.
