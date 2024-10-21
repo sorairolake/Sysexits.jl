@@ -37,7 +37,7 @@ jobs:
       - name: Build a package
         uses: julia-actions/julia-buildpkg@v1.6.0
       - name: Run tests
-        uses: julia-actions/julia-runtest@v1.10.0
+        uses: julia-actions/julia-runtest@v1.11.1
 
   fmt:
     name: Format
