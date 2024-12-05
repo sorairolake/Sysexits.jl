@@ -19,13 +19,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os:
-          - ubuntu-24.04
-          - macos-14
-          - windows-2022
-        version:
-          - "1.0" # minimum supported Julia version
-          - "1" # automatically expands to the latest stable release of Julia
+        os-alias:
+          - ubuntu
+          - macos
+          - windows
+        version-alias:
+          - minimum
+          - latest
+        include:
+          - os-alias: ubuntu
+            os: ubuntu-24.04
+          - os-alias: macos
+            os: macos-14
+          - os-alias: windows
+            os: windows-2022
+          - version-alias: minimum
+            version: "1.0"
+          - version-alias: latest
+            version: "1"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
