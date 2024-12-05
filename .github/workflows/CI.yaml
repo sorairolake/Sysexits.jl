@@ -29,10 +29,13 @@ jobs:
         include:
           - os-alias: ubuntu
             os: ubuntu-24.04
+            arch: "x64"
           - os-alias: macos
             os: macos-14
+            arch: "aarch64"
           - os-alias: windows
             os: windows-2022
+            arch: "x64"
           - version-alias: minimum
             version: "1.0"
           - version-alias: latest
@@ -44,7 +47,7 @@ jobs:
         uses: julia-actions/setup-julia@v2.6.1
         with:
           version: ${{ matrix.version }}
-          arch: "x64"
+          arch: ${{ matrix.arch }}
       - name: Build a package
         uses: julia-actions/julia-buildpkg@v1.7.0
       - name: Run tests
