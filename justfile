@@ -2,6 +2,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
+# Run default recipe
+@_default:
+    just -l
+
 # Run tests
 test:
     #!/usr/bin/env -S julia --project
