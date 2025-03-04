@@ -37,4 +37,4 @@ fmt:
 
 # Increment the version
 @bump part:
-    bump-my-version bump {{part}}
+    bump-my-version bump {{ part }}
