@@ -19,34 +19,45 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os:
-          - ubuntu-22.04
-          - macos-14
-          - windows-2022
-        version:
-          - "1.0" # minimum supported Julia version
-          - "1" # automatically expands to the latest stable release of Julia
+        os-alias:
+          - ubuntu
+          - macos
+          - windows
+        version-alias:
+          - minimum
+          - latest
+        include:
+          - os-alias: ubuntu
+            os: ubuntu-24.04
+          - os-alias: macos
+            os: macos-14
+          - os-alias: windows
+            os: windows-2022
+          - version-alias: minimum
+            version: "1.0"
+          - version-alias: latest
+            version: "1"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v2.4.0
+        uses: julia-actions/setup-julia@v2.6.1
         with:
           version: ${{ matrix.version }}
           arch: "x64"
       - name: Build a package
-        uses: julia-actions/julia-buildpkg@v1.6.0
+        uses: julia-actions/julia-buildpkg@v1.7.0
       - name: Run tests
-        uses: julia-actions/julia-runtest@v1.10.0
+        uses: julia-actions/julia-runtest@v1.11.2
 
   fmt:
     name: Format
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v2.4.0
+        uses: julia-actions/setup-julia@v2.6.1
         with:
           version: "1" # automatically expands to the latest stable release of Julia
       - name: Check code formatted
