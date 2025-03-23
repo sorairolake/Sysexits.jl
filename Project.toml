@@ -5,7 +5,7 @@
 name = "Sysexits"
 uuid = "49ffb959-a01e-48ce-b0f8-35f9b0bd11b7"
 authors = ["Shun Sakai <sorairolake@protonmail.ch>"]
-version = "0.2.9"
+version = "0.2.10"
 
 [compat]
 julia = "1.0"
