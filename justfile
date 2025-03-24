@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 # Run default recipe
-@_default:
+_default:
     just -l
 
 # Run tests
@@ -19,15 +19,15 @@ fmt:
     JuliaFormatter.format(".")
 
 # Run the linter for GitHub Actions workflow files
-@lint-github-actions:
+lint-github-actions:
     actionlint -verbose
 
 # Run the formatter for the README
-@fmt-readme:
+fmt-readme:
     npx prettier -w README.md
 
 # Build the documentation
-@build-docs:
+build-docs:
     julia --project=docs -e ' \
         using Pkg; \
         Pkg.develop(PackageSpec(path = pwd())); \
@@ -36,9 +36,9 @@ fmt:
     julia --project=docs docs/make.jl
 
 # Run the formatter for the documentation
-@fmt-docs:
+fmt-docs:
     npx prettier -w docs/src
 
 # Increment the version
-@bump part:
+bump part:
     bump-my-version bump {{ part }}
