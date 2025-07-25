@@ -39,14 +39,6 @@ Please see [CHANGELOG.adoc].
 
 Please see [CONTRIBUTING.adoc].
 
-## Similar projects
-
-- <https://github.com/sorairolake/sysexits-rs> (Rust)
-- <https://github.com/sorairolake/sysexits-zig> (Zig)
-
-You can discover more projects at
-<https://github.com/sorairolake/awesome-sysexits>.
-
 ## License
 
 Copyright (C) 2023 Shun Sakai (see [AUTHORS.adoc])
