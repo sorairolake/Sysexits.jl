@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Shun Sakai
 //
-// SPDX-License-Identifier: Apache-2.0 OR MIT
+// SPDX-License-Identifier: CC-BY-4.0
 
 = Changelog
 :toc: preamble
@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on https://keepachangelog.com/[Keep a Changelog], and this
 project adheres to https://semver.org/[Semantic Versioning].
+
+== {compare-url}/v0.2.10\...v0.2.11[0.2.11] - 2025-08-22
+
+=== Changed
+
+* Change the license for documents to CC BY 4.0 ({pull-request-url}/68[#68])
 
 == {compare-url}/v0.2.9\...v0.2.10[0.2.10] - 2025-03-23
 

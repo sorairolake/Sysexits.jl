@@ -12,4 +12,3 @@ makedocs(
     authors = "Shun Sakai",
     pages = ["Home" => "index.md", "api.md"],
 )
-deploydocs(repo = "github.com/sorairolake/Sysexits.jl.git")
