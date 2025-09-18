@@ -60,8 +60,21 @@ jobs:
         uses: julia-actions/setup-julia@v2.6.1
         with:
           version: "1" # automatically expands to the latest stable release of Julia
-      - name: Check code formatted
+      - name: Run formatter in check mode
         run: |
           julia -e 'using Pkg; Pkg.add("JuliaFormatter")'
           julia -e 'using JuliaFormatter; JuliaFormatter.format(".", verbose = true)'
           git diff --exit-code
+
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Run formatter in check mode
+        run: npx prettier -c "**.{md,yaml,yml}"
