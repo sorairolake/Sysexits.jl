@@ -42,10 +42,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v2.7.0
+        uses: julia-actions/setup-julia@v3.0.1
         with:
           version: ${{ matrix.version }}
-          arch: "x64"
+          arch: ${{ (matrix.os-alias == 'macos' && matrix.version-alias == 'latest') && 'aarch64' || 'x64' }}
+          force-arch: ${{ (matrix.os-alias == 'macos' && matrix.version-alias == 'minimum') && 'true' || 'false' }}
       - name: Build a package
         uses: julia-actions/julia-buildpkg@v1.7.0
       - name: Run tests
@@ -58,7 +59,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
       - name: Setup Julia environment
-        uses: julia-actions/setup-julia@v2.7.0
+        uses: julia-actions/setup-julia@v3.0.1
         with:
           version: "1" # automatically expands to the latest stable release of Julia
       - name: Run formatter in check mode
