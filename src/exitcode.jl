@@ -136,6 +136,8 @@ end
 
 The base value for `ExitCode`.
 
+See [`sysexits.h(3head)`](https://man7.org/linux/man-pages/man3/sysexits.h.3head.html) for details.
+
 # Examples
 
 ```jldoctest
@@ -149,6 +151,8 @@ const base = usage
     max
 
 The maximum value for `ExitCode`.
+
+See [`sysexits.h(3head)`](https://man7.org/linux/man-pages/man3/sysexits.h.3head.html) for details.
 
 # Examples
 
